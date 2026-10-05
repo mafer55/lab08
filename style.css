@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+    margin: 0 0 30px 0;
+}
+
+#catalogo {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+    width: 200px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.producto h2 {
+    margin: 15px 0;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.descuento {
+    color: #555;
+}
+
+.precio-final {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 800px) {
+
+    #catalogo {
+        grid-template-columns: 1fr;
+    }
+
+}
